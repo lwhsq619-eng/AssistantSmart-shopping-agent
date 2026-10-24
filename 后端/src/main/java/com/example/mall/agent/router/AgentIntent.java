@@ -1,0 +1,23 @@
+package com.example.mall.agent.router;
+
+/**
+ * AI Agent 路由意图枚举。
+ */
+public enum AgentIntent {
+    SHOPPING_GUIDE,
+    CUSTOMER_SERVICE,
+    SEMANTIC_SEARCH,
+    RETENTION,
+    COPYWRITING,
+    COMMENT_MANAGEMENT,
+    MARKETING,
+    ORDER_ANALYSIS,
+    AFTER_SALE,
+    INVENTORY_ANALYSIS,
+    OPERATION_BRIEFING,
+    PERSONALIZED_RECOMMENDATION,
+    SCENE_MATCH,
+    CONTENT_SAFETY,
+    RAG_KNOWLEDGE,
+    UNKNOWN
+}

@@ -1,0 +1,93 @@
+{
+  "info": {
+    "name": "AI商城Agent系统",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "name": "AI Health",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/ai/health"
+      }
+    },
+    {
+      "name": "DeepSeek Chat",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"message\": \"你好\"\n}" },
+        "url": "{{baseUrl}}/api/ai/chat"
+      }
+    },
+    {
+      "name": "Guide Chat",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"userId\": 1,\n  \"sessionId\": \"guide1\",\n  \"message\": \"推荐500元以内的无线耳机\"\n}" },
+        "url": "{{baseUrl}}/api/ai/guide/chat"
+      }
+    },
+    {
+      "name": "Customer Service",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"userId\": 1,\n  \"sessionId\": \"cs1\",\n  \"message\": \"我的订单怎么还没发货\"\n}" },
+        "url": "{{baseUrl}}/api/ai/customer-service/chat"
+      }
+    },
+    {
+      "name": "Semantic Search",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"userId\": 1,\n  \"keyword\": \"适合宿舍用的安静小风扇，价格别太贵\",\n  \"page\": 1,\n  \"size\": 10\n}" },
+        "url": "{{baseUrl}}/api/ai/search/semantic"
+      }
+    },
+    {
+      "name": "Personalized Recommend",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"userId\": 1,\n  \"scene\": \"HOME_PAGE\",\n  \"limit\": 10\n}" },
+        "url": "{{baseUrl}}/api/ai/recommend/personalized"
+      }
+    },
+    {
+      "name": "RAG Ask",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"userId\": 1,\n  \"question\": \"商品签收后几天内可以无理由退货？\",\n  \"documentType\": \"RETURN_RULE\",\n  \"topK\": 5\n}" },
+        "url": "{{baseUrl}}/api/ai/rag/ask"
+      }
+    },
+    {
+      "name": "Workbench User Guide",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"userId\": 1,\n  \"role\": \"USER\",\n  \"sessionId\": \"wb1\",\n  \"message\": \"推荐500元以内的无线耳机\"\n}" },
+        "url": "{{baseUrl}}/api/ai/workbench/chat"
+      }
+    },
+    {
+      "name": "Workbench Permission Denied",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"userId\": 1,\n  \"role\": \"USER\",\n  \"sessionId\": \"wb5\",\n  \"message\": \"帮我分析本月营收和客单价\"\n}" },
+        "url": "{{baseUrl}}/api/ai/workbench/chat"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+deepseek:
+  api-key: ${DEEPSEEK_API_KEY:}
+  base-url: https://api.deepseek.com
+  chat-model: deepseek-chat
+  reasoner-model: deepseek-reasoner
+  timeout-seconds: 60
+  max-retries: 2

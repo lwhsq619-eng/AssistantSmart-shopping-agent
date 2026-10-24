@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="商品图片占位图">
+  <rect width="1200" height="900" fill="#f1f5f9"/>
+  <rect x="300" y="245" width="600" height="410" rx="34" fill="#ffffff" stroke="#cbd5e1" stroke-width="8"/>
+  <circle cx="500" cy="390" r="72" fill="#e2e8f0"/>
+  <path d="M345 610 L545 470 L665 565 L760 500 L855 610 Z" fill="#cbd5e1"/>
+  <text x="600" y="715" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="46" font-weight="700" fill="#64748b">暂无商品图片</text>
+</svg>

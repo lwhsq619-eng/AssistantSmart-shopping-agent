@@ -1,0 +1,31 @@
+# Java / Maven
+target/
+**/target/
+
+# Node / Vite
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+logs/
+
+# Environment and local config
+.env
+.env.*
+!.env.example
+application-local.yml
+application-dev.yml
+**/application-local.yml
+**/application-dev.yml
+
+# OS
+.DS_Store
+Thumbs.db

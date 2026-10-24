@@ -1,0 +1,10 @@
+{
+  "name": "mall-system-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:frontend": "cd 前端 && npm install",
+    "dev": "cd 前端 && npm run dev",
+    "build": "cd 前端 && npm run build"
+  }
+}

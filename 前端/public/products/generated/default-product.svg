@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f5f7fa"/>
+  <circle cx="260" cy="190" r="150" fill="#dbeafe"/>
+  <circle cx="960" cy="720" r="210" fill="#ffedd5"/>
+  <rect x="375" y="245" width="450" height="330" rx="52" fill="#ffffff" stroke="#dbeafe" stroke-width="18"/>
+  <path d="M440 535 L545 410 L635 505 L700 445 L780 535 Z" fill="#93c5fd"/>
+  <circle cx="690" cy="340" r="48" fill="#f59e0b"/>
+  <text x="600" y="685" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" font-weight="800" fill="#1e293b">商品图片加载中</text>
+  <text x="600" y="742" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="26" fill="#64748b">Default Product Placeholder</text>
+</svg>
