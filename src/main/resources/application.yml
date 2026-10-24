@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: assistant-smart-shopping-agent
+server:
+  port: 8080
